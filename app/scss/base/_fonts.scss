@@ -1,0 +1,38 @@
+
+// /* hind-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../../static/fonts/hind-v16-latin-ext_latin-regular.woff2') format('woff2'),
+    url('../../static/fonts/hind-v16-latin-ext_latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('../../static/fonts/hind-v16-latin-ext_latin-600.woff2') format('woff2'),
+    url('../../static/fonts/hind-v16-latin-ext_latin-600.woff') format('woff');
+}
+
+// /* roboto-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../../static/fonts/roboto-v30-latin-ext_latin-regular.woff2') format('woff2'),
+    url('../../static/fonts/roboto-v30-latin-ext_latin-regular.woff') format('woff');
+}
+
+// /* roboto-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../../static/fonts/roboto-v30-latin-ext_latin-700.woff2') format('woff2'),
+    url('../../static/fonts/roboto-v30-latin-ext_latin-700.woff') format('woff');
+}

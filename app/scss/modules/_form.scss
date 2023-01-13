@@ -1,0 +1,106 @@
+.form {
+  margin: 2rem auto;
+  max-width: 500px;
+  @include media(">md") {
+    max-width: none;
+  }
+  &__wr {
+    @include media(">md") {
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.7rem;
+    }
+  }
+
+  &__footer {
+    margin: 3rem 0 0;
+    text-align: center;
+    @include media(">md") {
+      margin: 3rem 0;
+    }
+  }
+  &__footer .btn{
+    margin-top: 3rem;
+  }
+}
+
+.form-field {
+  margin-top: 2rem;
+  @include media(">md") {
+    margin-top: 0;
+  }
+  &__input {
+    background-color: $white-color;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100%;
+    color: $text-color;
+    outline: none;
+    height: 50px;
+    padding: 0.4rem 1.5rem;
+    &::-webkit-input-placeholder {
+      color: #565e66;
+    }
+  }
+  &__input--textarea {
+    height: 125px;
+    &::-webkit-input-placeholder {
+      transform: translateY(-35px);
+   }
+  }
+  &__input--select {
+    appearance: none;
+    background-image: url('../../static/img/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right;
+    background-origin: content-box;
+  }
+
+  &__checkbox input{
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+
+  &__checkbox label {
+    position: relative;
+    cursor: pointer;
+    color: $white-color;
+    font-size: 1.4rem;
+  }
+
+  &__checkbox label:before {
+    content:'';
+    appearance: none;
+    background-color: $white-color;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 9px;
+    margin-top: -1px;
+  }
+
+  &__checkbox input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 3px;
+    height: 9px;
+    border: solid $primary;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}

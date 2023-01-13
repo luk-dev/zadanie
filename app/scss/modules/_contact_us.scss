@@ -1,0 +1,32 @@
+.contact-us {
+  background: url('../../static/img/contact-bg.jpg') no-repeat center;
+  background-size: cover;
+  padding: 6rem 0;
+
+  &__heading,
+  &__subheading {
+    text-align: center;
+    color: $white-color;
+    display: block;
+  }
+
+  &__subheading {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    font-weight: 400;
+  }
+  &__subheading a {
+    color: $white-color;
+    font-weight: 500;
+  }
+
+  &__container {
+    max-width: 950px;
+  }
+
+  .form {
+    @include media(">md") {
+      margin-top: 2.5rem;
+    }
+  }
+}
